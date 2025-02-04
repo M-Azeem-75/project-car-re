@@ -1,0 +1,135 @@
+/* 
+body{
+    height: 2048px;
+} */
+.card:hover {
+  box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.459);
+}
+
+
+ .img1{
+   width: 40%;
+   margin-top: 10px;
+  margin-left: 110px;
+    height: 40%;
+    color: red;
+ }
+ .bckimg{
+  padding: 100px ;
+  background-image: url(img/back1.avif);
+  background-size: cover;
+
+ }
+ .cntctimg{
+  padding: 100px ;
+  background-image: url(img/contct.jpg);
+  background-size: cover;
+
+ }
+ .srvc-img{
+  padding: 100px ;
+  background-image: url(img/srvc.jpg);
+  background-size: cover;
+
+ }
+ .lst{
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+ }
+
+ .lst-srvc{
+  display: flex;
+  flex-direction:  row;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+ padding: 0;
+
+ }
+ 
+/* .icon{
+  position: relative;
+  top: 50%;
+  position: absolute;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+} */
+
+
+/* service meber card */
+
+.plan-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  /* box-shadow: 0 6px 15px rgb(247, 144, 144); */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 10px rgb(236, 107, 107);
+}
+.btn-custom {
+  background-color: #1b1717;
+  color: white;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.btn-custom:hover {
+  background-color: #d80606;
+  color: white;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+h4 {
+  font-size: 1.4rem;
+  color: #d60b0b;
+}
+.plan-header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+.plan-card ul {
+  text-align: left;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+.plan-card ul li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+.plan-card ul li i {
+  color: #c00606;
+  margin-right: 10px;
+}
+.plan-card ul li.negative i {
+  color: #271b1c;
+}
+.membership-plan {
+  background: #2b323a;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+/* Making sure the icons and text stay inline and responsive */
+@media (max-width: 767px) {
+  .plan-card ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
